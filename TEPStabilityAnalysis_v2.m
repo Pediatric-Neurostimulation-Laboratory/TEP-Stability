@@ -14,7 +14,7 @@ numEpoch = size(EEG.data, 3);
 epochSeg = 10:5:100;
 
 visRange_x = [-100, 501];
-visRange_y = [-20, 20];
+visRange_y = [-15, 15];
 
 ROI = struct;
 
@@ -30,10 +30,6 @@ for e = 1:length(epochSeg)
     currentEpoch = epochSeg(e);
 
     load(['ExampleData\dataPreprocessed_', mat2str(epochSeg(e)),'-epoch.mat'])
-
-    dataRange = find(EEG.times==visRange_x(1)):find(EEG.times==visRange_x(2));
-    numPoint = size(dataRange, 2)-1;
-    EEG = pop_select(EEG, 'point', dataRange);
 
     % TESA - Local TEP
     [~, ROI_x(1, e, :), ROI_y(1, e, :), ci_x(1, e, :), ci_y(1, e, :)] = ...

@@ -8,3 +8,5 @@ The main script for TEP stability analyese is named TEPStabilityAnalysis_v2.m. I
 We also provide example datasets stored in the Folder named "ExampleData". Each of them was used for generating a "candidate" TEP using the method decribed in the paper. It can be used for testing the methodology and reproducing the MNP plot we shown in Figure 1 in the paper. However, although fully de-identified, this dataset is for testing the script only. Please do not distrbute the dataset without the permission of the authors.
 
 Please contact xiweishe@stanford.edu or fbaumer@stanford.edu for any questions
+
+This work is published on Scientific Reports: https://www.nature.com/articles/s41598-024-59468-8
